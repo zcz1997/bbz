@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+
+        body{
+            padding-top: 100px;
+            background-image: url("https://img.moegirl.org/common/7/79/LLSS_00.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .my-navbar{
+            background-color:inherit;
+            transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+            height: auto;
+        }
+        .anav{
+            font-size: 1.5em;
+        }
+        a:hover{
+            color: #33a2fe;
+            background: transparent !important;
+            outline:0;
+        }
+        .scrolledDown{
+            background: rgb(227, 227, 227);
+            color: #ddd;
+        }
+        .mynavul{
+            padding-right:4em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-brand navbar-fixed-top my-navbar row" role="navigation" id="mybar">
+
+        <div class="navbar-header" >
+
+            <img src="starsea.png" style="height: 70px;weight:70px;">
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#shownav" id="btnnav">
+                <span class="glyphicon glyphicon-menu-hamburger">这里是按钮</span>
+
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav mynavul">
+                <li><a href="index.html" class="anav">首页</a></li>
+                <li><a href="r.html" class="anav">作品阅览</a></li>
+                <li><a href="#" class="anav">活动众筹</a></li>
+                <li><a href="#" class="anav">旧货处理</a></li>
+                <li><a href="#" class="anav">组织介绍</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container" style="clear: both">
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+    <h1>作品1</h1>
+    <h1>Zuopin2</h1>
+</div>
+
+
+
+
+<script>
+    (function(){
+        pos = 0;
+        ticking = false;
+        var header = document.querySelector("nav#mybar");
+        window.addEventListener("scroll", function(){
+            pos = window.scrollY;
+            if(pos > 70&&!ticking){
+                header.classList.add("scrolledDown");
+                ticking = true;
+            }
+            if(pos < 70 && ticking){
+                header.classList.remove("scrolledDown");
+                ticking = false;
+            }
+        });
+    })();
+</script>
+
+</body>
+
+</html>
